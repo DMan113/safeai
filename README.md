@@ -1,20 +1,16 @@
 # SafeAI_Project
 
-Проєкт SafeAI являє собою прототип системи безпечного штучного інтелекту, яка використовує модульний підхід для інтеграції:
-- **внутрішнього стану** (обчислення алгоритмічних процесів),
-- **зовнішнього впливу** (збір зворотнього зв’язку, аудиту і етичних норм),
-- **контрольованої випадковості** (дозована креативність).
+The SafeAI project is a prototype of a safe artificial intelligence system that uses a modular approach to integrate:
+- **Internal State** (algorithmic process calculations),
+- **External Feedback** (feedback collection, audit, and ethics compliance),
+- **Controlled Randomness** (measured creativity).
 
-Ітеративне оновлення стану здійснюється за формулою:
-
-
+The iterative state update is performed using the formula:
 
 \[
 F(x, t+1) = \Bigl(f(x,t)\,A \cdot O(x,t)\,B \cdot R(x,t)\,C\Bigr) \cdot F(x,t)
 \]
 
+where \(A\), \(B\), \(C\) are weight coefficients adaptively regulating the influence of each module.
 
-
-де \(A\), \(B\), \(C\) — вагові коефіцієнти, які адаптивно регулюють вплив кожного з модулів.
-
-Проєкт демонструє концепцію адаптивного навчання та безпечного самокоригування ШІ.
+The project demonstrates the concept of adaptive learning and safe AI self-correction.

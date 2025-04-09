@@ -1,9 +1,10 @@
 import logging
 from typing import Any
 
+
 class BaseModule:
     """
-    Базовий абстрактний клас для модулів системи.
+    Base abstract class for system modules.
     """
     def __init__(self, name: str):
         self.name = name
@@ -11,6 +12,6 @@ class BaseModule:
 
     def process(self, x: Any, t: int) -> float:
         """
-        Абстрактний метод обробки даних. Повинен бути реалізований у підкласах.
+        Abstract method for data processing. Must be implemented in subclasses.
         """
-        raise NotImplementedError("Кожен модуль має реалізувати власний метод process")
+        raise NotImplementedError("Each module must implement its own process method.")

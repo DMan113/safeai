@@ -2,9 +2,10 @@ import random
 from typing import Any, Tuple
 from base_module import BaseModule
 
+
 class RandomnessModule(BaseModule):
     """
-    Модуль для додавання контрольованої випадковості.
+    Module for adding controlled randomness.
     """
     def __init__(self, randomness_range: Tuple[float, float] = (0.95, 1.05)):
         super().__init__("Randomness")
@@ -12,6 +13,6 @@ class RandomnessModule(BaseModule):
 
     def process(self, x: Any, t: int) -> float:
         """
-        Генерація випадкових даних у заданому діапазоні.
+        Generates random data within the given range.
         """
         return random.uniform(*self.randomness_range)

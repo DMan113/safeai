@@ -1,10 +1,11 @@
 import logging
-
 from advanced_safe_ai_system import AdvancedSafeAISystem
+
 
 def main():
     """
-    Головна функція для запуску симуляції розширеної системи безпеки ШІ.
+    Main function to run the simulation of the advanced AI safety system
+    with optimized corrections and visualization.
     """
     safe_ai = AdvancedSafeAISystem(
         initial_F=1.0,
@@ -32,7 +33,9 @@ def main():
             }
         }
     )
+
     safe_ai.simulate(x="default", iterations=30)
+    safe_ai.plot_history()
 
 if __name__ == "__main__":
     main()
